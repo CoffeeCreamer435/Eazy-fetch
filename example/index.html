@@ -1,0 +1,17 @@
+<head>
+  <script src="./test.js"></script>
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet" />
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+</head>
+<script>
+  let testHeader = { header: 'header' };
+  setHeader(testHeader);
+  setOutputAsJson();
+  getFetch('https://jsonplaceholder.typicode.com/todos/1').then(function(value) {
+    console.log(value);
+  });
+</script>
+<body>
+  <button class="foo-button mdc-button">Button</button>
+</body>
